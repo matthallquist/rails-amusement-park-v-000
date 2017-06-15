@@ -1,0 +1,13 @@
+<%= form_for @user, url: url_for(controller: 'sessions', action: 'create') do |f| %>
+  <div class="field">
+    <%= f.label 'Name' %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label 'Password' %>
+    <%= f.password_field :password %>
+  </div>
+
+  <%= f.submit 'Sign In' %>
+<% end %>
